@@ -1,0 +1,42 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:gravity="center_horizontal"
+  android:padding="20dp"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.MaterialToolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:title="@string/app_name"
+    app:titleCentered="true"
+    app:titleTextColor="@android:color/white"/>
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnCoaches"
+    style="@style/Widget.Material3.Button.Filled"
+    android:text="@string/entrenadores"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"/>
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnReferees"
+    style="@style/Widget.Material3.Button.Filled"
+    android:text="@string/arbitros"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"/>
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnHelp"
+    style="@style/Widget.Material3.Button.OutlinedButton"
+    android:text="@string/instrucciones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"/>
+</LinearLayout>

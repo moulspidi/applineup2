@@ -1,0 +1,8 @@
+
+<resources>
+  <string name="app_name">FVBIB Lineup</string>
+  <string name="scan_prompt">Coloque el código dentro del rectángulo</string>
+  <string name="entrenadores">ENTRENADORES</string>
+  <string name="arbitros">ÁRBITROS</string>
+  <string name="instrucciones">INSTRUCCIONES</string>
+</resources>

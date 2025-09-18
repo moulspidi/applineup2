@@ -1,0 +1,69 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:navigationIcon="@drawable/ic_arrow_back_24"
+    app:title="Árbitros" app:titleCentered="true" app:titleTextColor="@android:color/white"/>
+
+  <com.google.android.material.button.MaterialButtonToggleGroup
+    android:id="@+id/tgSets" app:singleSelection="true" app:selectionRequired="true"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="8dp">
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSet1" style="@style/Widget.Material3.Button.OutlinedButton" android:text="SET 1"/>
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSet2" style="@style/Widget.Material3.Button.OutlinedButton" android:text="SET 2"/>
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSet3" style="@style/Widget.Material3.Button.OutlinedButton" android:text="SET 3"/>
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSet4" style="@style/Widget.Material3.Button.OutlinedButton" android:text="SET 4"/>
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSet5" style="@style/Widget.Material3.Button.OutlinedButton" android:text="SET 5"/>
+  </com.google.android.material.button.MaterialButtonToggleGroup>
+
+  <LinearLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="12dp">
+
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+      android:layout_height="wrap_content" android:orientation="vertical">
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnScanA" style="@style/Widget.Material3.Button.FilledTonal"
+        android:text="Escanear A" android:layout_width="match_parent" android:layout_height="wrap_content"
+        app:icon="@drawable/ic_camera_24" app:iconGravity="textStart"/>
+      <TextView android:id="@+id/lblTeamA" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Equipo A" android:layout_marginTop="8dp"/>
+      <GridLayout
+        android:id="@+id/gridA"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:columnCount="3">
+        <TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/>
+        <TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/>
+      </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+      android:layout_height="wrap_content" android:orientation="vertical">
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnScanB" style="@style/Widget.Material3.Button.FilledTonal"
+        android:text="Escanear B" android:layout_width="match_parent" android:layout_height="wrap_content"
+        app:icon="@drawable/ic_camera_24" app:iconGravity="textStart"/>
+      <TextView android:id="@+id/lblTeamB" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Equipo B" android:layout_marginTop="8dp"/>
+      <GridLayout
+        android:id="@+id/gridB"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:columnCount="3">
+        <TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/>
+        <TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/><TextView style="@style/RotationCell"/>
+      </GridLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>
